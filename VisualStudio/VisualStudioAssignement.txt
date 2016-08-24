@@ -10,6 +10,9 @@ FÖR GODKÄNT
 
 	En användbar funktion:
 
+	ctrl + s hela tiden! kan inte hjälpa det. Så mycket att jag får ont i fingrarna. men vet inte om den räknas. :)
+	Men jag använder ctrl + r för rename instället för att som du visade först renamea och använda ctrl + .
+	Vanesak antar jag.
 	__________________________________________
 
 
@@ -24,14 +27,17 @@ FÖR VÄL GODKÄNT
 
 	En användbar funktion:
 
+	Den inbyggda GitHub klienten. (Team explorer). Lite yxig men funkar. föredrar annars Konsollkommandon. ctrl +§ +m
 	__________________________________________
 
 	En användbar funktion:
 
+	Dataconnections mm via server explorer ctrl + alt +s
 	__________________________________________
 
 	En användbar funktion:
 
+	insert snippet. ctrl k + x. när man inte kommer ihåg vilka codesnippets som finns. alternativt ctrl k + b för den större code snippet manager.
 	__________________________________________
 
 	

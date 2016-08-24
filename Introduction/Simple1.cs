@@ -19,7 +19,7 @@ namespace AdvancedCsharp.Intro.Introduction
             var result = number1 + number2 + number3;
 
             Console.WriteLine($"Summa av talen är {result}");
-
+            
         }
     }
 }
