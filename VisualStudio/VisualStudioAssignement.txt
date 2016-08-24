@@ -1,0 +1,42 @@
+﻿
+-------------------------------------------------------------------------------------------------------------------
+
+FÖR GODKÄNT
+
+	Studera och testa alla kommandon i google docs dokumentet (länk finns i inlämningsuppgiften)
+
+	Skriv ner ytterligare *en* användbar funktion i Visual Studio som du själv använder eller som du har hittat på nätet.
+	Lägg till shortcut om det finns
+
+	En användbar funktion:
+
+	__________________________________________
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+FÖR VÄL GODKÄNT
+
+	Studera och testa alla kommandon i google docs dokumentet (länk finns i inlämningsuppgiften)
+
+	Skriv ner ytterligare *tre* användbara funktion i Visual Studio som du själv använder eller som du har hittat på nätet.
+	Lägg till shortcut om det finns
+
+	En användbar funktion:
+
+	__________________________________________
+
+	En användbar funktion:
+
+	__________________________________________
+
+	En användbar funktion:
+
+	__________________________________________
+
+	
+-------------------------------------------------------------------------------------------------------------------
+	
+
+
+

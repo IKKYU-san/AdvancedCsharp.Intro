@@ -1,0 +1,35 @@
+﻿
+-------------------------------------------------------------------------------------------------------------------
+
+FÖR GODKÄNT
+
+	Se filmerna om versionshantering och gör ett likadant repo (behöver inte vara exakt likandant, men så nära som möjligt)
+
+	Skriv länk till ditt öppna github-repository här: (t.ex https://github.com/happy-bits/nardax)
+
+	__________________________________________
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+FÖR VÄL GODKÄNT
+
+	Se filmerna om versionshantering och gör ett likadant repo (behöver inte vara exakt likandant, men så nära som möjligt)
+
+	Skriv länk till ditt öppna github-repository här: (t.ex https://github.com/happy-bits/nardax)
+
+	__________________________________________
+
+
+	Använd ytterligare ett (valfritt) git-kommando (alltså något som inte nämnst i videoklippen). 
+	Ange vilket kommando du valt och beskriv kortfattat vad kommandot gör.
+
+	__________________________________________
+
+	
+-------------------------------------------------------------------------------------------------------------------
+	
+
+
+
+
