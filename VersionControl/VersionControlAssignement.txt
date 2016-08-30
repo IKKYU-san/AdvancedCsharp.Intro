@@ -7,6 +7,7 @@ FÖR GODKÄNT
 
 	Skriv länk till ditt öppna github-repository här: (t.ex https://github.com/happy-bits/nardax)
 
+	https://github.com/IKKYU-san/Nardax
 	__________________________________________
 
 
@@ -18,12 +19,17 @@ FÖR VÄL GODKÄNT
 
 	Skriv länk till ditt öppna github-repository här: (t.ex https://github.com/happy-bits/nardax)
 
+	https://github.com/IKKYU-san/Nardax
 	__________________________________________
 
 
 	Använd ytterligare ett (valfritt) git-kommando (alltså något som inte nämnst i videoklippen). 
 	Ange vilket kommando du valt och beskriv kortfattat vad kommandot gör.
 
+	reset <branch> to this commit
+	Jag råkade tabba mig och commita och pusha fel.
+	Så för att komma tillbaka till en tidigare version och ta bort dom felaktiga förändringarna
+	använde jag "reset cleanup to this commit" 
 	__________________________________________
 
 	
