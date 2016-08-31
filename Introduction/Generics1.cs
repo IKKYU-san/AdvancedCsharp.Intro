@@ -27,9 +27,24 @@ namespace AdvancedCsharp.Intro.Introduction
                     break;
                 }
 
-                Person person = new Person();
-                string[] inputValues = inputString.Split(',');
+                string[] inputValues;
+                try
+                {
+                    inputValues = inputString.Split(',');
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Wrong input, try again");
+                    continue;
+                }
 
+                if (inputValues[0] == "" || inputValues[1] == "")
+                {
+                    Console.WriteLine("Wrong input, try again");
+                    continue;
+                }
+
+                Person person = new Person();
                 person.Name = inputValues[0];
 
                 int parsedNumber;
@@ -46,7 +61,7 @@ namespace AdvancedCsharp.Intro.Introduction
                 ageSum += person.Age;
             }
 
-            Console.WriteLine($"Summa av åler: {ageSum}");
+            Console.WriteLine($"Summa av ålder: {ageSum}");
         }
     }
 }
