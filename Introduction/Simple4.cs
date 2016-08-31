@@ -30,7 +30,7 @@ namespace AdvancedCsharp.Intro.Introduction
                 }
             }
             var lowNumbers = numberList.Where(x => x < 100);
-            var highNumbers = numberList.Where(x => x > 100);
+            var highNumbers = numberList.Where(x => x >= 100);
 
             Console.WriteLine($"Summan av de tal som är lägre än 100: {lowNumbers.Sum()}");
             Console.WriteLine($"Summan av de tal som är högre än 100: {highNumbers.Sum()}");
