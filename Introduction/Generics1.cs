@@ -1,45 +1,52 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
 
-//namespace AdvancedCsharp.Intro.Introduction
-//{
-//    class Person
-//    {
+namespace AdvancedCsharp.Intro.Introduction
+{
+    class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
 
-//    }
+    class Generics1
+    {
 
-//    class Generics1
-//    {
+        public static void Run()
+        {
 
-//        public static void Run()
-//        {
+            List<Person> people = new List<Person>();
 
-//            List<Person> persons = new List<Person>();
-//            int parsedNumber;
+            while (true)
+            {
+                Console.Write("Ange namn,ålder(int): ");
+                var inputString = Console.ReadLine();
 
-//            while (true)
-//            {
-//                Console.Write("Ange namn,ålder(int): ");
-//                var inputValue = Console.ReadLine();
+                if (inputString == "")
+                {
+                    break;
+                }
 
-//                if (inputValue == "")
-//                {
-//                    break;
-//                }
+                Person person = new Person();
+                string[] inputValues = inputString.Split(',');
 
-//                // use .split(',') and try to parse name,age and verify age is a number.
-//                if (int.TryParse(inputValue, out parsedNumber))
-//                {
-//                    numberList.Add(parsedNumber);
+                person.Name = inputValues[0];
 
-//                }
-//            }
-//            var ageSum = numberList.Where(x => x < 100);
+                int parsedNumber;
+                if (int.TryParse(inputValues[1], out parsedNumber))
+                {
+                    person.Age = parsedNumber;
+                    people.Add(person);
+                }
+            }
 
-//            Console.WriteLine($"Summa av åler: {lowNumbers.Sum()}");
-//        }
-//    }
-//}
+            int ageSum = 0;
+            foreach (var person in people)
+            {
+                ageSum += person.Age;
+            }
+
+            Console.WriteLine($"Summa av åler: {ageSum}");
+        }
+    }
+}

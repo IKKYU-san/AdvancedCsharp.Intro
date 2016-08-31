@@ -1,5 +1,4 @@
 ﻿
-
 namespace AdvancedCsharp.Intro
 {
     using Introduction;
@@ -11,10 +10,9 @@ namespace AdvancedCsharp.Intro
         {
             Console.ForegroundColor = ConsoleColor.White;
 
-            Simple4.Run();
+            Generics1.Run();
 
             Console.ReadKey();
         }
     }
 }
-

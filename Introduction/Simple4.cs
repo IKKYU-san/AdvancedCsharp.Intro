@@ -26,7 +26,6 @@ namespace AdvancedCsharp.Intro.Introduction
                 if (int.TryParse(inputValue, out parsedNumber))
                 {
                     numberList.Add(parsedNumber);
-
                 }
             }
             var lowNumbers = numberList.Where(x => x < 100);
