@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Introduction\Generics1.cs" />
+    <Compile Include="Introduction\HashSet1.cs" />
+    <Compile Include="Introduction\IEnumerable1.cs" />
     <Compile Include="Introduction\Simple1.cs" />
     <Compile Include="Introduction\Simple2.cs" />
     <Compile Include="Introduction\Simple3.cs" />
