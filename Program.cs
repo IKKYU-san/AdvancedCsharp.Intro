@@ -10,7 +10,7 @@ namespace AdvancedCsharp.Intro.Introduction
         {
             Console.ForegroundColor = ConsoleColor.White;
 
-            HashSet1.Run();
+            HashSet2.Run();
 
             Console.ReadKey();
         }
