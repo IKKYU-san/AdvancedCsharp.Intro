@@ -3,10 +3,16 @@ using System.Collections.Generic;
 
 namespace AdvancedCsharp.Intro.Introduction
 {
-    class Person
+    class Person<Tname, Tage>
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
+        public Tname Name { get; set; }
+        public Tage Age { get; set; }
+
+        public Person(Tname name, Tage age)
+        {
+            Name = name;
+            Age = age;
+        }
     }
 
     class Generics1
@@ -15,7 +21,7 @@ namespace AdvancedCsharp.Intro.Introduction
         public static void Run()
         {
 
-            List<Person> people = new List<Person>();
+            List<Person<string, int>> people = new List<Person<string, int>>();
 
             while (true)
             {
@@ -31,6 +37,11 @@ namespace AdvancedCsharp.Intro.Introduction
                 try
                 {
                     inputValues = inputString.Split(',');
+                    if (inputValues[0] == "" || inputValues[1] == "")
+                    {
+                        Console.WriteLine("Wrong input, try again");
+                        continue;
+                    }
                 }
                 catch (Exception)
                 {
@@ -38,20 +49,21 @@ namespace AdvancedCsharp.Intro.Introduction
                     continue;
                 }
 
-                if (inputValues[0] == "" || inputValues[1] == "")
-                {
-                    Console.WriteLine("Wrong input, try again");
-                    continue;
-                }
-
-                Person person = new Person();
-                person.Name = inputValues[0];
-
                 int parsedNumber;
                 if (int.TryParse(inputValues[1], out parsedNumber))
                 {
-                    person.Age = parsedNumber;
-                    people.Add(person);
+                    try
+                    {
+
+                        Person<string, int> person = new Person<string, int>(inputValues[0], parsedNumber);
+                        people.Add(person);
+                    }
+                    catch (Exception)
+                    {
+
+                        Console.WriteLine("Wrong input, try again");
+                        continue;
+                    }
                 }
             }
 
