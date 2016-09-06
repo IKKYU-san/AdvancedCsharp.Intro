@@ -5,12 +5,26 @@ namespace AdvancedCsharp.Intro.Introduction
 {
     class HashSet2
     {
+        public class Person : IEquatable<Person>
+        {
+            public string Name { get; set; }
+            public int Age { get; set; }
+
+            public override int GetHashCode()
+            {
+                return Name.GetHashCode();
+            }
+
+            public bool Equals(Person other)
+            {
+                return this.Name.Equals(other.Name);
+            }
+        }
 
         public static void Run()
         {
 
-            Dictionary<string, int> people = new Dictionary<string, int>();
-
+            HashSet<Person> people = new HashSet<Person>();
             while (true)
             {
                 Console.Write("Ange namn,ålder(int): ");
@@ -39,19 +53,27 @@ namespace AdvancedCsharp.Intro.Introduction
 
                 string name = inputValues[0].ToLower();
                 int age;
-
                 if (int.TryParse(inputValues[1], out age))
                 {
                     try
                     {
-                        if (people.ContainsKey(inputValues[0]))
+                        if (people.Count == 0)
                         {
-                            people[name] = age;
+                            people.Add(new Person() { Name = name, Age = age });
                         }
-
                         else
                         {
-                            people.Add(name, age);
+                            foreach (var person in people)
+                            {
+                                if (person.Name == name)
+                                {
+                                    person.Age = age;
+                                }
+                                else
+                                {
+                                    people.Add(new Person() { Name = name, Age = age });
+                                }
+                            }
                         }
 
                     }
@@ -66,7 +88,7 @@ namespace AdvancedCsharp.Intro.Introduction
             int ageSum = 0;
             foreach (var person in people)
             {
-                ageSum += person.Value;
+                ageSum += person.Age;
             }
             int numberOfPersons = people.Count;
 
