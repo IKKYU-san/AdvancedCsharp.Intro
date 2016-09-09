@@ -3,17 +3,19 @@ using System.Collections.Generic;
 
 namespace AdvancedCsharp.Intro.Introduction
 {
+    public class Apartment { 
+        public string Address { get; set; }
+    }
+
     class Dictionary1
     {
-
         public static void Run()
         {
-
-            Dictionary<string, int> people = new Dictionary<string, int>();
-
+            Dictionary<int,Apartment> apartment = new Dictionary<int,Apartment>();
+           
             while (true)
             {
-                Console.Write("Ange namn,ålder(int): ");
+                Console.Write("Ange lägenhetsnummer(int),address: ");
                 var inputString = Console.ReadLine();
 
                 if (inputString == "")
@@ -36,19 +38,22 @@ namespace AdvancedCsharp.Intro.Introduction
                     Console.WriteLine("Wrong input, try again");
                     continue;
                 }
+                string address = inputValues[1];
 
                 int parsedNumber;
-                if (int.TryParse(inputValues[1], out parsedNumber))
+                if (int.TryParse(inputValues[0], out parsedNumber))
                 {
                     try
                     {
-                        if (people.ContainsKey(inputValues[0]))
+                        if (apartment.ContainsKey(parsedNumber))
                         {
-                            people[inputValues[0]] = parsedNumber;
+                            apartment[parsedNumber].Address = address;
                         }
                         else
                         {
-                            people.Add(inputValues[0], parsedNumber);
+                            Apartment newApartment = new Apartment();
+                            newApartment.Address = address;
+                            apartment.Add(parsedNumber, newApartment);
                         }
 
                     }
@@ -60,16 +65,13 @@ namespace AdvancedCsharp.Intro.Introduction
                     }
                 }
             }
-            int ageSum = 0;
-            foreach (var person in people)
+
+            Console.WriteLine($"Antal lägenheter i listan: {apartment.Count}");
+            if (apartment.ContainsKey(1234))
             {
-                ageSum += person.Value;
+                Console.WriteLine($"Lägenhet med nummer 1234: {apartment[1234].Address}");
             }
-            int numberOfPersons = people.Count;
-
-
-            Console.WriteLine($"Summa: {ageSum}");
-            Console.WriteLine($"Antal personer: {numberOfPersons}");
+            
         }
     }
 }
