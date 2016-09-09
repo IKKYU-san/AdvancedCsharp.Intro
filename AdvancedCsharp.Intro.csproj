@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Introduction\Dictionary2.cs" />
     <Compile Include="Introduction\Dictionary1.cs" />
     <Compile Include="Introduction\Generics1.cs" />
     <Compile Include="Introduction\HashSet1.cs" />

@@ -3,17 +3,18 @@ using System.Collections.Generic;
 
 namespace AdvancedCsharp.Intro.Introduction
 {
-    class Dictionary1
+    // I didnt get the assignment requirements. They were too unclear.
+    class Dictionary2
     {
-        class Apartment
+        class Building
         {
             public string Address { get; set; }
         }
 
         public static void Run()
         {
-            Dictionary<int,Apartment> apartment = new Dictionary<int,Apartment>();
-           
+            Dictionary<int, Building> apartment = new Dictionary<int, Building>();
+
             while (true)
             {
                 Console.Write("Ange lägenhetsnummer(int),address: ");
@@ -52,7 +53,7 @@ namespace AdvancedCsharp.Intro.Introduction
                         }
                         else
                         {
-                            Apartment newApartment = new Apartment();
+                            Building newApartment = new Building();
                             newApartment.Address = address;
                             apartment.Add(parsedNumber, newApartment);
                         }
@@ -72,7 +73,7 @@ namespace AdvancedCsharp.Intro.Introduction
             {
                 Console.WriteLine($"Lägenhet med nummer 1234: {apartment[1234].Address}");
             }
-            
+
         }
     }
 }
