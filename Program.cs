@@ -10,7 +10,7 @@ namespace AdvancedCsharp.Intro.Introduction
         {
             Console.ForegroundColor = ConsoleColor.White;
 
-            OverloadedMethod1.Run();
+            OverloadedConstructor1.Run();
 
             Console.ReadKey();
         }
