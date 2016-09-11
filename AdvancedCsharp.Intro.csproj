@@ -51,6 +51,7 @@
     <Compile Include="Introduction\HashSet2.cs" />
     <Compile Include="Introduction\IEnumerable1.cs" />
     <Compile Include="Introduction\Inheritance1.cs" />
+    <Compile Include="Introduction\Interface1.cs" />
     <Compile Include="Introduction\OverloadedMethod1.cs" />
     <Compile Include="Introduction\OverloadedConstructor1.cs" />
     <Compile Include="Introduction\Simple1.cs" />
