@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Introduction\Dictionary2.cs" />
     <Compile Include="Introduction\Dictionary1.cs" />
+    <Compile Include="Introduction\Filehandling1.cs" />
     <Compile Include="Introduction\Generics1.cs" />
     <Compile Include="Introduction\HashSet1.cs" />
     <Compile Include="Introduction\HashSet2.cs" />
@@ -63,6 +64,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Introduction\PersonNummer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="VersionControl\VersionControlAssignement.txt" />
     <Content Include="VersionControl\VersionControlExpectedCommits.png" />
     <Content Include="VisualStudio\VisualStudioAssignement.txt" />
